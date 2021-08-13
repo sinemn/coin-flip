@@ -38,7 +38,7 @@ function disableButton() {
 }
 
 resetButton.addEventListener("click", () => {
-  flip.style.style = "rotateX(0)";
+  flip.style.animation = "rotateX(0)";
   heads = 0;
   tails = 0;
   updateStats();
