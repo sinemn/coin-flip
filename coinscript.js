@@ -1,7 +1,7 @@
 let heads = 0;
 let tails = 0;
 let flip = document.querySelector(".flip");
-let flipButton = document.querySelector("#flip");
+let flipButton = document.getElementById("flip");
 let resetButton = document.querySelector("#reset");
 
 // console.log(heads, tails, flip, flipButton, resetButton);
@@ -22,6 +22,7 @@ flipButton.addEventListener("click", () => {
     tails++;
   }
   setTimeout(updateStats, 3000);
+  disableButton();
 });
 
 function updateStats() {
@@ -37,7 +38,7 @@ function disableButton() {
 }
 
 resetButton.addEventListener("click", () => {
-  flip.style.transform = "rotateX(0)";
+  flip.style.style = "rotateX(0)";
   heads = 0;
   tails = 0;
   updateStats();
