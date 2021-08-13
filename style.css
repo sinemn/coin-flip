@@ -102,9 +102,11 @@ button {
 }
 
 .flip-button:disabled {
-  background-color: #e1e0ee;
-  border-color: #e1e0ee;
-  color: #101020;
+  background-color: var(--bgc);
+  border: 2px solid rgb(167, 159, 159);
+  border-color: rgb(167, 159, 159);
+  color: rgb(167, 159, 159);
+  box-shadow: none;
 }
 
 .reset-button {
